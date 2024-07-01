@@ -1,18 +1,3 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "3.15.00"
-    }
-  }
-  backend "azurerm" {
-  }
-}
-
-provider "azurerm" {
-  features {}
-}
-
 resource "azurerm_resource_group" "azure_rg" {
   name     =  var.rgname
   location =  var.location
