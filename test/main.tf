@@ -1,5 +1,18 @@
+terraform {
+  backend "azurerm" {
+    
+  }
+}
 provider "azurerm" {
-    features {}
+
+   version = "~>2.0"
+
+  # subscription_id=""
+  #   tenant_id=""
+  #   client_id=""
+  features {
+  }
+}
 
 resource "azurerm_resource_group" "azure_rg" {
   name     =  var.rgname
