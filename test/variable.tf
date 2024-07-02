@@ -1,7 +1,7 @@
 variable "resourcegroup_name" {
   type        = string
   description = "The name of the resource group"
-  default     = "devops-rg"
+  default     = "terraform-deployment-rg"
 }
 
 variable "location" {
