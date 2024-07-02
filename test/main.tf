@@ -11,9 +11,10 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "example" {
-  name     = "terraform-rg"
-  location = "Central India"
+resource "azurerm_resource_group" "vnet_rg" {
+  name     = var.resourcegroup_name
+  location = var.location
+  tags     = var.tags
 }
 
 resource "azurerm_virtual_network" "vnet" {
