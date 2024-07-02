@@ -46,10 +46,5 @@ variable "subnets" {
       name             = "subnet_3"
       address_prefixes = ["10.13.3.0/24"]
     }
-    # The name must be AzureBastionSubnet
-    bastion_subnet = {
-      name             = "AzureBastionSubnet"
-      address_prefixes = ["10.13.250.0/24"]
-    }
   }
 }
